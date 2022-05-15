@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/fonts/label_font.tres" type="DynamicFont" id=1]
+[ext_resource path="res://assets/shaders/solid_bw.tres" type="Material" id=2]
+
+[node name="Label" type="Label"]
+material = ExtResource( 2 )
+custom_fonts/font = ExtResource( 1 )
+text = "Placeholder"
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}

@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://game/levels/Level.gd" type="Script" id=1]
+[ext_resource path="res://game/entities/units/Unit.tscn" type="PackedScene" id=2]
+
+[node name="Level" type="Node2D"]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Unit" parent="." instance=ExtResource( 2 )]
+_coord = Vector2( 1, 1 )
+
+[node name="Unit2" parent="." instance=ExtResource( 2 )]
+max_health = 10
+_coord = Vector2( 4, 7 )
+alignment = 2
+agility = 3
+attack_range = 2
+attack_power = 3
+
+[node name="Unit3" parent="." instance=ExtResource( 2 )]
+max_health = 15
+_coord = Vector2( 3, 3 )
+agility = 0
+attack_range = 3
+attack_power = 2
